@@ -1,11 +1,11 @@
-// function myFunction(){
-//     let count = 10;
-//     for( var item = 0; item <5; item+=2){
-//         console.log("item", item);
-//     }
-// }
-// myFunction();
-// console.log(item);
+function myFunction(){
+    let count = 10;
+    for( var item = 0; item <5; item+=2){
+        console.log("item", item);
+    }
+}
+myFunction();
+console.log(item);
 
 // How to access variables in a function
 
@@ -17,3 +17,11 @@ function add(){
 }
 add();
 console.log(add());
+// parameters
+function sub(a, b){
+    let ans = a - b;
+    return ans;
+}
+console.log(sub(2, 5));
+
+// Dynamic Functions
