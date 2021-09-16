@@ -6,3 +6,4 @@ console.log(myItem[0]); // Indexing array values; it always start from 0: Index 
             console.log(myItem[i]);
         }
     }
+    
