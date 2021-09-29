@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+       /* html {
+            font-family: sans-serif;
+            color: #333;
+        }
+        body {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        */
+        h1{
+            margin-left: 70px;
+        }
+        form ul li label{
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        form li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        form ul li input select span{
+            float: left;
+            width: 350px;
+            height: 150px;
+        }
+        [type="submit"]{
+            margin: 20px 0 0 230px;
+            font-size: 18px;
+        }
+        p{
+            margin-left: 70px;
+            font-weight: bold;
+        }
+        textarea {
+            float: left;
+            width: 350px;
+            height: 150px;
+        }
+        /* div, article{
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #dedede;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <ul>
+            <li><label for="userid">User ID</label></li>
+            <li><input type="text" name="userid"></li>
+
+            <li><label for="passwordid">Password</label></li>
+            <li><input type="password" name="userpassword"></li>
+
+            <li><label for="username">User Name</label></li>
+            <li><input type="text" name="username"></li>
+
+            <li><label for="useraddress">Address</label></li>
+            <li><input type="text" name="address" size="25"></li>
+
+            <li><label for="usercountry">Country</label></li>
+            <li><select name="country">
+                <option selected = "Empty" value="Default">Please Select the Country in EAC</option>
+                <option value="ug"> Uganda </option>
+                <option value="ky"> Kenya </option>
+                <option value="tz"> Tanzania </option>
+                <option value="rw"> Rwanda </option>
+                <option value="br"> Burundi </option>
+                <option value="drc"> Congo </option>
+                </select>
+            </li>
+
+            <li><label for="email">Email Address</label></li>
+            <li><input type="text" name="email" size="15"></li>
+
+            <li><label for="zipcode">Zip Code</label></li>
+            <li><input type="text" name="zipcode"></li>
+
+            <li><label for="gender">Gender</label>
+                <input type="radio"  id="female" name="sex" size="25"><span>Male</span>
+                <input type="radio"  id="male" name="sex" size="25"><span>Female</span>
+            </li>
+            
+            <li><label>Language</label>
+                <input type="checkbox" name="ENGLanguage" value="ENG" checked><span>English</span>
+                <input type="checkbox" name="NONLanguage" value="NONENG" ><span>English</span>
+            </li>
+
+            <li><label for="desc">Description</label></li>
+            <li><textarea name="desc"></textarea></li>
+
+            <li><input type="button" name="submit" value="Submit"></li>
+        </ul>
+    </form>
+</body>
+</html>
