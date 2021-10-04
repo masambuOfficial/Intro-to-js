@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background: #aaa;
+      }
+      #container {
+        background-color: white;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        padding: 30px 20px;
+      }
+      #btns {
+        width: 100%;
+      }
+      #btns button {
+        padding-left: 38px;
+        padding-right: 38px;
+        border: 1px solid #aaa;
+        border-radius: none;
+      }
+      #active {
+        background-color: #228b22;
+        color: white;
+      }
+      #active a{
+        text-decoration: none;
+        color: white;
+      }
+      h5 {
+        color: limegreen;
+        font-size: 16px;
+      }
+      select {
+        padding: 5px;
+        width: 100%;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+      }
+      #payments h5 {
+        margin-top: 10px;
+      }
+      /* input[type="text"],
+      input[type="email"],
+      input[type="password"]{
+        border: 1px solid #aaa;
+      }*/
+      #borders{
+        border: 1px solid #aaa;
+        border-radius: 4px;
+      } 
+      #btn1 input[type="button"] {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid #aaa;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+          <h3>Payments Form</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mx-auto" id="container">
+          <h5>Account</h5>
+          <form action="#">
+            <div class="input-group mb-3" id="borders">
+              <span class="input-group-text"
+                ><i class="fa fa-user" aria-hidden="true"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Full Name"
+                name="Username"
+              />
+            </div>
+
+            <div class="input-group mb-3" id="borders">
+              <span class="input-group-text"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email Address"
+                name="email"
+              />
+            </div>
+
+            <div class="input-group mb-3" id="borders">
+              <span class="input-group-text"
+                ><i class="fa fa-key" aria-hidden="true"></i
+              ></span>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                name="pwd"
+              />
+            </div>
+            <div class="row">
+              <div class="col-6" id="dob">
+                <h5>Date of Birth</h5>
+                <div class="row">
+                  <div class="col">
+                    <input id="borders"
+                      type="text"
+                      class="form-control"
+                      placeholder="DD"
+                      name="dob"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text" id="borders"
+                      class="form-control"
+                      placeholder="MM"
+                      name="month"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text" id="borders"
+                      class="form-control"
+                      placeholder="YYYY"
+                      name="year"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <h5>Gender</h5>
+                <div class="row">
+                  <div class="col" id="btn1">
+                    <div class="input-group mb-3 no-gutter">
+                      <input type="button" name="male" value="Male" style="
+                      border-radius: 4px 0px 0px 4px;
+                    " id="active"/>
+                      <input type="button" name="female" value="Female" style="
+                      border-radius: 0px 4px 4px 0px;
+                    " />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" id="payments">
+                <h5>Payment Details</h5>
+                <ul role="tablist" class="nav nav-pills rounded nav-fill">
+                  <li
+                    class="nav-item"
+                    style="
+                      border: 1px solid #aaa;
+                      border-radius: 4px 0px 0px 4px;
+                      padding: 10px;
+                      cursor: pointer;
+                    "
+                    id="active"
+                  >
+                    <a href="#credit-card" >
+                      <i class="fa fa-cc-visa" aria-hidden="true"></i> Credit
+                      Card
+                    </a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    style="
+                      border: 1px solid #aaa;
+                      border-radius: 0px 4px 4px 0px;
+                      padding: 10px;
+                      cursor: pointer;
+                    "
+                  >
+                    <a href="#paypal"  style="color: gray; text-decoration: none;">
+                      <i class="fa fa-cc-paypal" aria-hidden="true"></i> Paypal
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="input-group mb-3 mt-3" id="borders">
+                  <span class="input-group-text"
+                    ><i class="fa fa-credit-card" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Card Number"
+                    name="cardno"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 mb-3">
+                <div class="input-group mb-3 mt-3" id="borders">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Card Number"
+                    name="cardno"
+                  />
+                </div>
+              </div>
+              <div class="col-6 mb-3" style="padding-top: 17px">
+                <div class="row">
+                  <div class="col-6">
+                    <select name="datamonth">
+                      <option selected="Empty" value="Default">01 Jan</option>
+                      <option value="ug">Uganda</option>
+                      <option value="ky">Kenya</option>
+                      <option value="tz">Tanzania</option>
+                      <option value="rw">Rwanda</option>
+                      <option value="br">Burundi</option>
+                      <option value="drc">Congo</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <select name="year">
+                      <option selected="Empty" value="Default">2005</option>
+                      <option value="ug">2004</option>
+                      <option value="ky">2003</option>
+                      <option value="tz">2002</option>
+                      <option value="rw">2001</option>
+                      <option value="br">2000</option>
+                      <option value="drc">1999</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  style="float: left; width: 100%"
+                >
+                  Make Payment
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  style="float: right; width: 100%"
+                >
+                  Cancel Payment
+                </button>
+              </div>
+            </div>
+            <footer></footer>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://use.fontawesome.com/9dc7e6c637.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet"/>
+  
+  
+ <style>
+  body {
+    background: #efefef;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    margin-left: -10px;
+    background-color: #28a745;
+}
+p{
+    color:#28a745;
+    font-weight: bold;
+}
+.input-group-text {
+    background-color: #f9f9f9;
+    
+
+}
+.btn .btn-sucess{
+    background-color: #7fd323;
+
+}
+
+.rounded {
+    border-radius: none;
+}
+
+.nav-pills .nav-link {
+    margin-right: -6px;
+    color: #000;
+    border: 2px solid #efefef;
+    background-color: #f9f9f9;
+    
+}
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+.form-control {
+    
+    background-color: #f9f9f9;
+    
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container py-5" >
+        <!-- For demo purpose -->
+        <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-6">Payment Forms</h1>
+            </div>
+        </div> <!-- End -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto " >
+                <div class="card" style="background: #fff">
+                    <div class="card-header" style="background: #fff">
+                        <!-- Credit card form content -->
+                        <div class="tab-content" style="background: #fff">
+                            <!-- credit card info-->
+                            <div id="credit-card" class="tab-pane fade show active pt-3">
+                                <form role="form" >
+                                    <p>Account</p>
+
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div> 
+                                        <input id="email" type="text" class="form-control" name="username" placeholder="Full Name">
+                                    </div><br>
+
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                        </div> 
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                    </div><br>
+
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
+                                        </div> 
+                                        <input id="email" type="password" class="form-control" name="password" placeholder="Password">
+                                    </div><br>
+                                    <p>Date of Birth</p>
+                                    
+                                    <div class="row">
+                                        <div></div>
+                                        <div class=" col-sm-2">
+                                            
+                                            <div class="form-group " style="width: 65px;">
+                                                <div class="input-group" >
+                                                     <input type="text" placeholder="DD" name="" class="form-control" required> 
+                                                      
+                                                    </div>
+                                              </div>
+                                              
+                                        </div>
+                                       
+                                        <div class=" col-sm-2">
+                                            <div class="form-group " style="width: 65px;">
+                                                <div class="input-group">
+                                                     
+                                                     <input type="text" placeholder="MM" name="" class="form-control" required>
+                                                     
+                                                    </div>
+                                              </div>
+                                              
+                                        </div>
+                                        <div class=" col-sm-3">
+                                            <div class="form-group ">
+                                                <div class="input-group">
+                                                     
+                                                     <input type="text" placeholder="YYY" name="" class="form-control" required> 
+                                                    </div>
+                                              </div>
+                                              
+                                        </div>
+                                        
+                                        <div class="col-sm-5">
+                                            <div class="form-group"> 
+                                                <p style="margin-top: -40px;">Gender</p>
+                                                <div class="input-group"> <input type="text" placeholder="Male" name="" class="form-control" required> <input type="text" placeholder="Female" name="" class="form-control" required> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                                        <!-- Credit card form tabs -->
+                                        <p>Payment Details</p>
+
+                                        <ul role="tablist" class="nav  nav-pills rounded nav-fill ">
+                                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fab  fa-cc-visa mr-2"></i> Credit Card </a> </li>
+                                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link"> <i class="fab fa-cc-paypal mr-2"></i> Paypal </a> </li>
+                                            <!-- <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li> -->
+                                        </ul>
+                                    </div><br>
+                            
+                                        
+                                            <div class="input-group ">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text"><i class="fas fa-credit-card mr-2"></i></span>
+                                                </div> 
+                                                <input id="email" type="text" class="form-control" name="username" placeholder="Credit Card">
+                                            </div><br>
+                                            
+                                   
+                                    <div class="row">
+                                        <div class=" col-sm-6">
+                                            <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                              </div> 
+                                              <input id="cvv" type="text" class="form-control" name="email" placeholder="Card CVC">
+                                              </div>
+                                              
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group"> 
+                                                <div class="input-group"> 
+                                                    <input type="number" placeholder="MM" name="" class="form-control" required> 
+                                                    <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-sm-6">
+                                            <div class="input-group ">
+                                            
+                                                <button type="button" class="subscribe btn btn-success btn-block shadow-sm"> Make Payment </button> 
+                                              </div>
+                                              
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group"> 
+                                                <button type="button" class="subscribe btn btn-danger btn-block shadow-sm"> Cancer Payment </button> 
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" ></script>
+<script src="https://use.fontawesome.com/releases/v5.8.1/css/all.css" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+<script>
+    $(function() {
+$('[data-toggle="tooltip"]').tooltip()
+})
+
+$("#datepicker").datepicker({
+    format: "yyyy",
+    viewMode: "years", 
+    minViewMode: "years"
+});
+</script>
+</html>
+
+</body>
+</html>
