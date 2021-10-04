@@ -74,15 +74,15 @@
             <li><input type="text" name="address" size="25"></li>
 
             <li><label for="usercountry">Country</label></li>
-            <li><select name="country">
-                <option selected = "Empty" value="Default">Please Select the Country in EAC</option>
+            <li><select name="country" id="country">
+                <option selected = "" value="Default">Please Select the Country in EAC</option>
                 <option value="ug"> Uganda </option>
                 <option value="ky"> Kenya </option>
                 <option value="tz"> Tanzania </option>
                 <option value="rw"> Rwanda </option>
                 <option value="br"> Burundi </option>
                 <option value="drc"> Congo </option>
-                </select>
+                </select><span id="countryError"></span>
             </li>
 
             <li><label for="email">Email Address</label></li>
@@ -94,11 +94,14 @@
             <li><label for="gender">Gender</label>
                 <input type="radio"  id="female" name="sex" size="25"><span>Male</span>
                 <input type="radio"  id="male" name="sex" size="25"><span>Female</span>
+                <small id="genderError"></small>
             </li>
             
             <li><label>Language</label>
-                <input type="checkbox" name="Language" value="ENG" checked><span>English</span>
-                <input type="checkbox" name="Language" value="NONENG" ><span>English</span>
+                <input type="checkbox" name="Language" value="ENG" id="
+                ENG"><span>English</span>
+                <input type="checkbox" name="Language" value="NONENG" id="
+                french" ><span>French</span>
             </li>
 
             <li><label for="desc">Description</label></li>
@@ -107,6 +110,6 @@
             <li><input type="submit" name="submit" value="Submit"></li>
         </ul>
     </form>
-    <script src="validatingwitheventlisterners.js"></script>
+    <script src="validate.js"></script>
 </body>
 </html>
