@@ -1,0 +1,22 @@
+{
+  "name": "node_faker",
+  "version": "1.0.0",
+  "description": "This is a faker.js package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cat:content": "cat package.json",
+    "email": "node faker.js"
+  },
+  "keywords": [],
+  "author": "Emmanuel Masambu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "nodemailer": "^6.7.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1"
+  }
+}

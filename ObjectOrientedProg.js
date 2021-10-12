@@ -14,7 +14,7 @@ var car = {
     transmission : "automatic",
     model : 2020, 
   sound : function (){
-        console.log("When a Janguar is new is Shiiiis"); 
+        console.log("When a Janguar is new it Shiiiis"); 
     }
     
 }

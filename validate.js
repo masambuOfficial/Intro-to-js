@@ -1,7 +1,6 @@
 const female = document.getElementById("female");
 const male = document.getElementById("male");
 const gender = document.getElementById("genderError");
-
 const nation = document.getElementById("country");
 const country1 = document.getElementById("countryError");
 
